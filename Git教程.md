@@ -412,3 +412,10 @@ bd8ba2d HEAD@{2}: commit: file content 12
 ![1561560498614](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561560498614.png?raw=true)
 
 ## 远程仓库
+
+### 创建远程仓库
+
+
+
+### 从远程仓库克隆
+
