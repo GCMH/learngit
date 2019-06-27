@@ -6,7 +6,7 @@
 
 下载后解压安装，在安装目录有一个git-bash.exe，点开弹出一个命令行，说明安装成功。
 
-![1561511050654](.\imgs\1561511050654.png)
+![1561511050654](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561511050654.png?raw=true)
 
 
 
@@ -35,7 +35,7 @@ cd dirName代表进入名为dirName的文件夹。
 
 pwd代表显示当前路径，进入learngit文件夹后代表显示当前文件夹路径。
 
-![1561534293956](.\imgs\1561534293956.png)
+![1561534293956](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561534293956.png?raw=true)
 
 /代表git-bash.exe所在文件夹，/learngit代表该文件夹与git-bash.exe在同一文件夹（D:/Git/）中。
 
@@ -47,13 +47,13 @@ pwd代表显示当前路径，进入learngit文件夹后代表显示当前文件
 git init
 ~~~
 
-![1561534527769](.\imgs\1561534527769.png)
+![1561534527769](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561534527769.png?raw=true)
 
 这样就将learngit这个文件夹设置为版本库，可以看到提示初始化空的Git参考，后续是版本库具体路径。
 
 创建成功后，learngi/文件夹下会有一个.git的隐藏文件夹
 
-![1561535914338](.\imgs\1561535914338.png)
+![1561535914338](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561535914338.png?raw=true)
 
 .git是用来跟踪管理版本库的，本身为隐藏文件夹，没事不要修改该文件下内容。
 
@@ -61,9 +61,9 @@ git init
 
 当然设置版本库不一定要在D:/Git文件夹下，可以是任意位置。
 
-![1561534832674](.\imgs\1561534832674.png)
+![1561534832674](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561534832674.png?raw=true)
 
-这里是进入D:\JavaEEIDE\eclipse\MyProject，然后将MyProject文件夹设置为版本库。
+这里是进入D:/JavaEEIDE/eclipse/MyProject，然后将MyProject文件夹设置为版本库。
 
 
 
@@ -81,17 +81,19 @@ Wrod文档是二进制格式的，所以测试时我们采用.txt文件。
 
 记得将默认编码格式改为UTF-8.
 
-![1561535448271](.\imgs\1561535448271.png)
+![1561535448271](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561535448271.png?raw=true)
+
+![](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561535448271.png)
 
 在.txt文件中输入111111，并将其保存到创建的版本库中。本例文件完整路径（D:/Git/learngit/readme.txt)
 
-![1561535655023](.\imgs\1561535655023.png)
+
 
 
 
 我们进入learngit文件夹，使用 `git status`查看下当前版本库状态。
 
-![1561536350051](.\imgs\1561536350051.png)
+![1561536350051](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561536350051.png?raw=true)
 
 可以看到信息中显示 没有跟踪到文件 readme.txt。
 
@@ -115,7 +117,7 @@ Wrod文档是二进制格式的，所以测试时我们采用.txt文件。
 
 添加到缓冲区使用`git add fileName`命令。
 
-![1561537965473](.\imgs\1561537965473.png)
+![1561537965473](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561537965473.png?raw=true)
 
 添加后状态变成了Changes to be committed
 
@@ -125,7 +127,7 @@ Wrod文档是二进制格式的，所以测试时我们采用.txt文件。
 
 加上-m 可以输入“msg“每次提交时，可以添加一些说明信息，这样便于管理。
 
-![1561540278259](.\imgs\1561540278259.png)
+![1561540278259](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561540278259.png?raw=true)
 
 提交后可以看做是git为其创建了一个版本，后续可以回退到这个版本。
 
@@ -135,7 +137,7 @@ Wrod文档是二进制格式的，所以测试时我们采用.txt文件。
 
 结合上面的add和commit我们来看下Git状态图：
 
-![Git状态图](https://upload-images.jianshu.io/upload_images/5005907-3279c75fc8af15c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/881/format/webp "Git状态图")
+![Git状态图](https://upload-images.jianshu.io/upload_images/5005907-3279c75fc8af15c6.png?raw=true?imageMogr2/auto-orient/strip%7CimageView2/2/w/881/format/webp "Git状态图")
 
 
 
@@ -155,11 +157,11 @@ commit后文件就进入了tracked，并且保存了一个版本”file content 
 
 然后使用`git add fileName`添加，添加完毕后再次查看状态`git status`会发现这个修改被添加到了缓存区，状态变为`change to be commit`。
 
-![1561541602644](.\imgs\1561541602644.png)
+![1561541602644](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561541602644.png?raw=true)
 
 
 
-![1561541640504](.\imgs\1561541640504.png)
+![1561541640504](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561541640504.png?raw=true)
 
 此时修改（222222）被提交到了缓冲区，最后使用`git commit -m "file content12"`就又保存了一个版本。
 
@@ -167,7 +169,7 @@ commit后文件就进入了tracked，并且保存了一个版本”file content 
 
 查看所有版本可通过`git reflog`命令查看
 
-![1561542700344](.\imgs\1561542700344.png)
+![1561542700344](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561542700344.png?raw=true)
 
 可以看到有 `file content1` 和 `file content12` 
 
@@ -179,7 +181,7 @@ HEAD代表当前版本，当前版本为`file content 12`
 
 上面我们已经创建了两个版本，我们依葫芦画瓢在创建一个版本，这次在文本中添加一行“333333”和一行“444444”。
 
-![1561542409568](.\imgs\1561542409568.png)
+![1561542409568](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561542409568.png?raw=true)
 
 接着使用`git add fileName`然后`git commit -m "msg"`,这时我们有这样一个需要。
 
@@ -187,7 +189,7 @@ HEAD代表当前版本，当前版本为`file content 12`
 
 先执行`git add fileNmae`然后采用`gie diff fileNme`查看修改的内容。
 
-![1561543275348](.\imgs\1561543275348.png)
+![1561543275348](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561543275348.png?raw=true)
 
 
 
@@ -213,7 +215,7 @@ HEAD代表当前版本，当前版本为`file content 12`
 
 
 
-![1561547692948](.\imgs\1561547692948.png)
+![1561547692948](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561547692948.png?raw=true)
 
 目前有`file content1` `file content12` `file content1234`这三个版本，当前版本为`file content1234`.
 
@@ -232,11 +234,11 @@ HEAD代表当前版本，当前版本为`file content 12`
 
 如果有要回退1000个版本怎么办，不可能写1000个`^`吧，这时可以采用`HEAD~X`x代表回退多个版本，为1代表回退一个版本，为2代表会退2个版本。
 
-![1561548161787](.\imgs\1561548161787.png)
+![1561548161787](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561548161787.png?raw=true)
 
 我们使用`git reset --hard HEAD~2`回退两个版本。
 
-![1561548802001](.\imgs\1561548802001.png)
+![1561548802001](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561548802001.png?raw=true)
 
 可以看到，HEAD is now at 92408d file content 1，显示了当前版本内容。
 
@@ -265,7 +267,7 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 我们需要还原到`file content1234` 使用`git reset --hard 92f408d `即可，版本号可用tab补齐。
 
-![1561550013835](.\imgs\1561550013835.png)
+![1561550013835](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561550013835.png?raw=true)
 
 `cat fileName`参考文件内容为（111111 22222）,代表成功恢复到指定版本。
 
@@ -275,7 +277,7 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 之前在将文件添加到版本库中有所介绍，每一个修改有其状态，没有被add的修改是`Changes not staged for commit`状态，在工作区中。add之后的修改是`Changes to be committed`状态在缓存区。
 
-![Git状态图](https://upload-images.jianshu.io/upload_images/5005907-3279c75fc8af15c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/881/format/webp "Git状态图")
+![Git状态图](https://upload-images.jianshu.io/upload_images/5005907-3279c75fc8af15c6.png?raw=true?imageMogr2/auto-orient/strip%7CimageView2/2/w/881/format/webp "Git状态图")
 
 目前文件版本是`file content12`,我们做一个测试步骤如下：
 
@@ -297,7 +299,7 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 8. 然后使用`git status`查看状态。
 
-![1561551656496](.\imgs\1561551656496.png)
+![1561551656496](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561551656496.png?raw=true)
 
 第一次修改被提交了，但第二次修改还处于`Changes not staged for commit`状态在工作区，此时第二个修改位于图片中的`modified`，第一个修改位于`stage`.而`git commit -m "msg"`只提交`stage`中的修改。
 
@@ -323,19 +325,19 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 然后使用`git add fileName`将其添加到版本库。
 
-![1561554221380](.\imgs\1561554221380.png)
+![1561554221380](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561554221380.png?raw=true)
 
 首先我们创建了一个文件，便在其中添加111111，此时文件处于`untracked`状态，我们使用`git add fileNmae`添加文件，使其处于`change to be committed`状态在缓冲区中。
 
 
 
-![1561554419807](.\imgs\1561554419807.png)
+![1561554419807](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561554419807.png?raw=true)
 
 然后我们使用`vim`修改文件内容，新加一行222222，然后查看修改状态，有两个修改操作，一个是之前在文件中写入111111，这个修改已经add了，处于缓存区中。而第二个修改在文件中添加222222处于`change not staged for commit`状态，在工作区中。
 
 
 
-![1561555357451](.\imgs\1561555357451.png)
+![1561555357451](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561555357451.png?raw=true)
 
 接下来使用`git checkout -- fileName` 撤销修改，然后查看状态，只保留了第一次提交的111111，第二次提交的22222被撤销了，文件回到了上一次add时的状态。
 
@@ -345,7 +347,7 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 接着上述操作，来看另外一种情况：commit后，修改文件，撤销修改。
 
-![1561555607556](.\imgs\1561555607556.png)
+![1561555607556](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561555607556.png?raw=true)
 
 首先commit，然后修改文件内容，再文件中添加一行22222.查看文件状态，添加222222这个修改处于`change not staged for commit`状态，在工作区中。
 
@@ -353,7 +355,7 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 接下来我们使用`git checkout -- revoke.txt`，撤销工作区内容。显然修改会被撤销，文件内容会变为111111，文件回到了上一次commit时的状态。
 
-![1561555854582](.\imgs\1561555854582.png)
+![1561555854582](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561555854582.png?raw=true)
 
 `git checkout -- fileName`可以撤销工作区中的修改。
 
@@ -369,7 +371,7 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 前面说到了，Git可以管理各种操作，删除也是一个操作，而操作是可以撤销的。
 
-![1561558988903](.\imgs\1561558988903.png)
+![1561558988903](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561558988903.png?raw=true)
 
 1. 首先我们创建一个`test.txt`
 
@@ -391,7 +393,7 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 注：这里文件以及被删除了，所以`tab`不会自动补齐，需要手动输入文件名。
 
-![1561559463661](.\imgs\1561559463661.png)
+![1561559463661](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561559463661.png?raw=true)
 
 我们撤销了删除操作，然后查看文件夹下文件，发现有`text.txt`文件。
 
@@ -401,12 +403,12 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 先使用`rm fileNmae`删除文件后，在使用`git rm fileName`
 
-![1561559854264](.\imgs\1561559854264.png)
+![1561559854264](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561559854264.png?raw=true)
 
 还是先删除文件，删除操作还没有被提交到缓冲区，执行`git rm fileName`，再次查看状态会发现 删除操作被提交了。后续继续`commit`就可以保存当前版本了。
 
 除了使用`git rm` 还可以使用`add -u`提交所有修改和被删除操作，`add`命令还可以跟随一些参数，具体参数及含义可在网上查阅。
 
-![1561560498614](.\imgs\1561560498614.png)
+![1561560498614](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561560498614.png?raw=true)
 
 ## 远程仓库
