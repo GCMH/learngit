@@ -6,7 +6,11 @@
 
 下载后解压安装，在安装目录有一个git-bash.exe，点开弹出一个命令行，说明安装成功。
 
+<<<<<<< HEAD
 ![1561511050654](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561511050654.png?raw=true)
+=======
+![1561511050654](./imgs\1561511050654.png)
+>>>>>>> f49a450bd358758343f0be2a948d9ec490370893
 
 
 
