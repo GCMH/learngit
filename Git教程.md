@@ -411,11 +411,114 @@ bd8ba2d HEAD@{2}: commit: file content 12
 
 ![1561560498614](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1561560498614.png?raw=true)
 
+
+
+
+
 ## 远程仓库
 
+之前我们创建的仓库都在我们本地，本地电脑可能遇到磁盘坏了等问题，而且本地仓库不利于多人协作。
+
+我们可以将仓库存储在网络上，只有有网就可以对仓库进行修改，别人可以对你的仓库进行修改这样可以多人协作开发，是不是很棒! 恰好GitHub提供远程仓库供我们免费试用，只需注册即可。
+
 ### 创建远程仓库
+
+首先我们去GitHub上创建一个账号，创建完毕后新建一个仓库。
+
+![1563010352405](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1563010352405.png)
+
+这个仓库和我们本地初始化的仓库一样，只是这个是保存在GitHub的服务器上的。
+
+![1563010924561](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1563010924561.png)
+
+指定一下仓库名就可以了，然后点击`Create repository`.
+
+点击创建后，会显示如下页面：
+
+![1563011011594](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1563011011594.png)
+
+我们只要看两条语句：
+
+~~~
+git remote add origin git@github.com:GCMH/learngit.git 
+git push -u origin master
+~~~
+
+第一句代表将将本地仓库与远程仓库关联起来，并未远程仓库`github.com:GCMH/learngit.git `起一个名`origin`
+
+GitHub上面有很多仓库，你要将本地的仓库和服务器上面的关联起来，这样才能进行上传下载等操作。
+
+第二句代表将本地仓库推送到远程仓库，及本地仓库所有内容都保存到远程仓库了。下次需要直接将远程仓库pull下来即可。
+
+
+
+所以首先 我们应该进入本地仓库，然后打开`git bash`
+
+![1563011332733](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1563011332733.png)
+
+将本地仓库和我们创建的远程仓库关联起来，后续这个本地仓库就对应了我们远程创建的仓库。
+
+
+
+接下来我们就可以使用
+
+`git push -u origin master `改名了将本地仓库推送到远程仓库的主分支，`-u`使本地master分支与远程仓库的master分支关联起来。
+
+当我们对本地仓库进行了修改并且commit后，就可以推送到远程仓库。
+
+后续推送直接使用`git push origin master `即可。
+
+
+
+注：此处可能会报错
+
+~~~
+git remote add origin git@github.com:name/learngit.git fatal: remote origin already exists.
+
+$ git push -u origin master ERROR: Permission to michaelliao/learngit.git denied to anna. fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights and the repository exists.
+~~~
+
+解决方法：[保存解决方法](https://blog.csdn.net/jingtingfengguo/article/details/51892864)
+
+
+
+第一次还可能出现如下警告
+
+~~~
+The authenticity of host 'github.com (xx.xx.xx.xx)' can't be established.
+RSA key fingerprint is xx.xx.xx.xx.xx.
+Are you sure you want to continue connecting (yes/no)?
+~~~
+
+直接yes即可。
 
 
 
 ### 从远程仓库克隆
+
+现在我们已经可以将本地仓库与远程仓库管理起来。
+
+有时看到别人比较好的仓库我们也能克隆下来。
+
+那么如何克隆呢？
+
+- 找到想克隆的仓库（就以刚才创建的远程仓库为例），找到如下图标点开并复制地址：
+
+![1563012115008](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1563012115008.png)
+
+- 切换到保存远程克隆仓库的文件夹（不切换直接在当前文件夹下拷贝也可以）
+
+  ![1563012233678](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1563012233678.png)
+
+如上图就代表克隆完毕。
+
+![1563012260392](https://raw.githubusercontent.com/GCMH/learngit/master/imgs/1563012260392.png)
+
+可以看见本地learngi仓库下还有一个克隆的learngit仓库。
+
+
+
+
 
